@@ -18,7 +18,7 @@ int mod (int dividend, int divisor) {
 	int quotient = 0, remainder = dividend;			// for future use
 	if (dividend < divisor) return dividend;
 	if (dividend == divisor) return 0;
-	while (dividend > divisor) {
+	while (dividend >= divisor) {
 		dividend -= divisor;				// dividing (subtracting by the num)
 		quotient += 1;
 	}
